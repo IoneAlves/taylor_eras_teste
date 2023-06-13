@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .midnights {
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .container_header {
+            width: 80%;
+            margin: 25px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .img-cover {
+            width: 100%;
+        }
+
+        .img_logo {
+            width: 100%;
+        }
+
+        .logo_header {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .menu_header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <div class="logo_header">
+                <img class="img_logo" src="imagens/The_Eras_Tour_Logo_White_Logo.png" alt="">
+            </div>
+            <div class="menu_header">
+                <nav>
+                    <a href="index.html">The Eras Tour</a>
+                    <a href="">Albuns</a>
+                    <a href="">Agenda</a>
+                    <a href="">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="midnights">
+            <div class="container">
+                <div>
+                    <h1>Midnights</h1>
+                    <p>Midnight é o 10º albúm de estúdio de Taylor Swift. Conheça as músicas do album.</p>
+                    <ol>
+                        <li>Snow on the beach</li>
+                        <li>Midnight Rain</li>
+                        <li>Lavander Haze</li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div>
+                    <div>
+                        <img class="img-cover" src="imagens/taylor-swift-midnights.webp" alt="">
+                    </div>                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

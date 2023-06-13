@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seção do cabeçalho */
+
+.container_header {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_header {
+     max-width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Seção Hero */
+
+.hero_container {
+    position: relative;
+}
+
+.hero_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero_title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(36,44,68,0.35);
+}
+
+h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Seção dos Cards */
+
+.eras {
+    border: 1px solid red;
+    padding: 150px 0;
+}
+
+.container_cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    width: 80%;
+    gap: 25px;
+}
+
+.album_cover {
+    box-shadow: 0 3px 5px rgba(117, 117, 117, 0.5);
+}
+
+.cover_album {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card_1989 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.card_reputation {
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+
+.card_red {
+    font-family: 'Anton', sans-serif;
+    color: #BC0000;
+    margin: 4px 0 0 0;
+}
+
+
+h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+    display: inline;
+}
+.bg_info_img {
+    width: 100%;
+    display: block;
+}
+
+.info_gerais {
+    background-image: url(./imagens/bg_info.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+.info_gerais_cards {
+    padding: 10vh 0;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+.container_info {
+    max-width: 100%;
+    padding: 10vh 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4vw;
+    text-align: center;
+}
+
+.info_gerais_text {
+    margin: 0 10vm;
+}
+
+.info_card_img {
+    max-width: 100%;
+    box-shadow: 0 3px 10px #616060;
+    border-radius: 6px;
+}
+
+
+@media only screen and (max-width: 550px){
+    .container_info {
+    grid-template-columns: 1fr;
+    }
+
+    .container_cards {
+    grid-template-columns: 1fr;
+    }
+
+    .info_gerais {
+    background-image: url(./imagens/bg_info_mobile.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: block;
+    }
+}
+
+
